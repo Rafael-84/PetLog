@@ -12,6 +12,8 @@ import { Carrinho } from './pages/carrinho';
 import { Tosa } from './pages/tosa';
 import { PerfilClient } from './pages/perfilCliente';
 import { Details } from './pages/detalheProduto';
+import { Login } from './pages/login';
+import { RegisterLogin } from './pages/login/criarLogin';
 
 
 const router = createBrowserRouter([
@@ -57,6 +59,14 @@ const router = createBrowserRouter([
       {
         element: <PerfilClient />,
         path: "/perfil",
+      },
+      {
+        element: <Login />,
+        path: "/login",
+      },
+      {
+        element: <RegisterLogin />,
+        path: "/login/criarlogin",
       },
     ],
   },
