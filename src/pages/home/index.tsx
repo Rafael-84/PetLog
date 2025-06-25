@@ -13,6 +13,7 @@ import racao2 from '../../assets/racao-dog2.png';
 import racao3 from '../../assets/racao-dog3.png';
 import racao4 from '../../assets/racao-dog4.png';
 import { Link } from "react-router";
+import { Footer } from "../../components/footer";
 
 interface ProductProps {
     id?: string | number;
@@ -61,7 +62,7 @@ export function Home() {
 
                     <div className="py-28">
                         <div className="absolute right-0 top-44  bg-[url(../../src/assets/cardimage.png)] bg-cover bg-blend-overlay bg-[#f7e73d] w-auto px-8 py-3 rounded-l-full shadow-[#575007] shadow-xs z-10 md:px-14">
-                            <h4 className=" text-center text-[#575007] font-mochiy text-xs">Produtos Recomendados</h4>
+                            <h4 className=" text-center text-[#575007] font-mochiy text-xs ">Produtos Recomendados</h4>
                         </div>
                     </div>
 
@@ -188,7 +189,8 @@ export function Home() {
                 </section>
 
             </Container>
-                <MeusServicos/>
+            <MeusServicos/>
+            <Footer/>
 
         </main>
     )
