@@ -4,6 +4,7 @@
 @theme {    
     --color-baseMenuText: #6C0020;
     --font-mochiy: "Mochiy Pop One", sans-serif; 
-    --font-poppins: "Poppins", sans-serif; 
+    --font-poppins: "Poppins", sans-serif;
+    --breakpoint-425px: 425px; 
 }
 

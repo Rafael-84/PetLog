@@ -19,7 +19,7 @@ export function Header() {
 
     return (
         <header className='w-full bg-white '>
-            <nav className=' border-b-baseMenuText border-b-8 w-full flex items-center justify-between px-14 py-2 mx-auto md:h-20'>
+            <nav className=' border-b-baseMenuText border-b-8 w-full flex items-center justify-between px-14 py-2 mx-auto md:h-20 '>
                 <Link to="/" className='font-mochiy text-lg from-baseMenuText bg-gradient-to-r bg-orange-500 text-transparent bg-clip-text' >Pet Log</Link>
                 <Link to="/carrinho" className='md:hidden'><FiShoppingCart size={22} color='#6C0020' /></Link>
                 <button onClick={handleOpenButton} className='cursor-pointer bg-baseMenuText rounded-md p-1  md:hidden'><IoMdMenu size={25} color='#FFF' /></button>
