@@ -15,14 +15,16 @@ import racao4 from '../../assets/racao-dog4.png';
 import { Link } from "react-router";
 import { Footer } from "../../components/footer";
 
-interface ProductProps {
-    id?: string | number;
+export interface ProductProps {
+    id: string | number;
     nome: string;
     preco: string | number;
     quantidade: string | number;
-    urlImage?: string;
+    urlImage: string;
     desconto?: string | number;
     precoPromocao?: string | number;
+    categoria?: string;
+    raca?: string;
 }
 
 export function Home() {
@@ -34,10 +36,6 @@ export function Home() {
         breakpoints: {
             '(min-width: 768px)': { slidesToScroll: 2 },
         },
-
-
-
-
     });
 
     const slidePrev = function slidePrev() {
@@ -56,7 +54,7 @@ export function Home() {
 
 
     return (
-        <main className="bg-[url(../../src/assets/bgbody-petlog.png)] bg-cover bg-blend-overlay bg-white/90">
+        <main className="bg-[url(../../src/assets/bgbody-petlog.png)] bg-contain  bg-blend-overlay bg-white/95">
             <Container >
                 <section >
 
@@ -68,7 +66,7 @@ export function Home() {
 
 
                     <div>
-                        <div className="relative overflow-hidden  max-w-6xl w-full mx-auto  rounded-md  py-2 px-2.5" ref={emblaRef}>
+                        <div className="relative overflow-hidden  max-w-6xl w-full mx-auto  rounded-md  py-2 px-2.5 border-[#F6ECBA] border-[1px]" ref={emblaRef}>
                             <div className="flex items-center justify-between gap-2 ">
                                 {produto.map((item, index) => (
                                     <article key={index} className="flex-[0_0_100%] min-w-0 md:flex-[0_0_30%] bg-[#F6ECBA] rounded-md ">
@@ -103,7 +101,7 @@ export function Home() {
                     </div>
                 </section>
                 <section className=" w-full flex flex-col gap-16">
-                    <div className="my-8  ">
+                    <div className="mt-8  ">
                         <div className="absolute left-0  bg-[url(../../src/assets/cardimage.png)] bg-cover bg-blend-overlay bg-[#3fffdf] w-auto px-8 py-2 rounded-r-full shadow-[#1C653C] shadow-xs z-10  md:px-14">
                             <h4 className="flex items-center justify-center gap-2  text-[#1C653C] font-mochiy text-xs">Os Cachorros Amam!!! <LuBone size={28} /></h4>
                         </div>
@@ -140,12 +138,12 @@ export function Home() {
                             </div>
                         </div>
 
-                        <Link to="/cachorros" className="flex flex-row-reverse pr-2   text-blue-500 text-sm font-bold hover:text-blue-800 hover:duration-300 md:pr-5 xl:pr-8 2xl:pr-28">Ver mais...</Link>
+                        <Link to="/cachorros" className="flex flex-row-reverse pr-2 text-blue-500 text-sm font-bold hover:text-blue-800 hover:duration-300 md:pr-5 xl:pr-8 2xl:pr-28">Ver mais...</Link>
 
                     </div>
                 </section>
                 <section className=" w-full flex flex-col gap-16">
-                    <div className="my-8  ">
+                    <div className="mt-8  ">
                         <div className="absolute right-0  bg-[url(../../src/assets/cardimage.png)]  bg-cover bg-blend-overlay bg-[#fcdbd2] w-auto px-8 py-2 rounded-l-full shadow-[#682716] shadow-xs z-10  md:px-14">
                             <h4 className="flex items-center justify-center gap-2  text-[#c41508] font-mochiy text-xs"><IoFishOutline size={28} /> Os Gatos Adoram!!! </h4>
                         </div>
