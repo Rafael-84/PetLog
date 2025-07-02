@@ -46,20 +46,20 @@ export function PageBirds() {
 
     return (
         <main >
-            <section className="w-full bg-[url(../../src/assets/bg-bird.png)] bg-contain bg-no-repeat bg-blend-overlay bg-white/85">
+            <section className="w-full md:bg-[url(../../src/assets/bg-bird.png)] md:bg-contain md:bg-no-repeat md:bg-blend-overlay md:bg-white/85">
                 <Container>
-                    <div className="w-full flex  items-center justify-center gap-4">
+                    <div className="w-full flex  items-center justify-center gap-4 py-10 md:py-24">
                         <GiBirdHouse  size={24} color="#B064DA"/>
-                        <h1 className="py-24 text-[#9d35d4] font-mochiy text-xl">Passáros</h1>
+                        <h1 className="text-[#9d35d4] font-mochiy text-xl">Passáros</h1>
                         <GiBirdHouse  size={24} color="#B064DA"/>
                     </div>
                  
                         
-                    <section className="flex flex-col items-center justify-center"  >
+                    <section>
                         
-                        <div className="pb-14">
+                        <div className="pb-20 md:pb-14">
 
-                            <div className="absolute right-0 top-64  bg-[url(../../src/assets/cardimage.png)] bg-cover bg-blend-overlay bg-[#f7e73d] w-auto px-8 py-3 mt-2 rounded-l-full shadow-[#575007] shadow-xs z-10 md:px-14">
+                            <div className="absolute right-0   bg-[url(../../src/assets/cardimage.png)] bg-cover bg-blend-overlay bg-[#f7e73d] w-auto px-8 py-3 mt-2 rounded-l-full shadow-[#575007] shadow-xs z-10 md:top-64 md:px-14">
                                 <h4 className=" text-center text-[#575007] font-mochiy text-xs ">Produtos Recomendados</h4>
                             </div>
                         </div>
@@ -95,8 +95,8 @@ export function PageBirds() {
                                     ))}
                                 </div>
                             </div>
-                            <button onClick={slidePrev}><div className="absolute top-[65%] left-[11%] p-1 bg-white rounded-full flex items-center justify-center border-baseMenuText border-2 cursor-pointer hover:bg-amber-200 z-50 hover:duration-300 md:top-[70%] md:left-[6%] lg:left-[3%] xl:left-[8%] xl:top-[75%] 2xl:top-[65%] 2xl:left-[11%]"><GrFormPrevious color="#6C0020" size={20} /></div></button>
-                            <button onClick={slideNext}><div className="absolute top-[65%] right-[11%] p-1 bg-white rounded-full flex items-center justify-center border-baseMenuText border-2 cursor-pointer hover:bg-amber-200 z-50 hover:duration-300 md:right-[5%] md:top-[70%] lg:right-[2%] xl:right-[7%] xl:top-[75%] 2xl:top-[65%] 2xl:right-[10%]"><GrFormNext color="#6C0020" size={20} /></div></button>
+                            <button onClick={slidePrev}><div className="absolute top-[65%] left-[11%] p-1 bg-white rounded-full flex items-center justify-center border-baseMenuText border-2 cursor-pointer hover:bg-amber-200 z-50 hover:duration-300 md:top-[80%] md:left-[6%] lg:left-[4%] xl:left-[9%] xl:top-[85%] 2xl:top-[65%] 2xl:left-[12.5%]"><GrFormPrevious color="#6C0020" size={20} /></div></button>
+                            <button onClick={slideNext}><div className="absolute top-[65%] right-[11%] p-1 bg-white rounded-full flex items-center justify-center border-baseMenuText border-2 cursor-pointer hover:bg-amber-200 z-50 hover:duration-300 md:top-[80%] md:right-[5%] lg:right-[4%] xl:right-[9%] xl:top-[85%] 2xl:top-[65%] 2xl:right-[12.5%]"><GrFormNext color="#6C0020" size={20} /></div></button>
                         </div>
                     
                  </section>
@@ -143,7 +143,7 @@ export function PageBirds() {
                 </section>
                 <section className="  w-full">
                     <div className="mt-8  ">
-                        <div className="absolute right-0  bg-[url(../../src/assets/cardimage.png)] bg-cover bg-blend-overlay bg-[#fac0c0] w-auto px-8 py-2 rounded-l-full shadow-[#AD0002] shadow-xs z-10  md:px-14">
+                        <div className="absolute right-0  bg-[url(../../src/assets/cardimage.png)] bg-cover bg-blend-overlay bg-[#fac0c0] w-auto py-2 rounded-l-full shadow-[#AD0002] shadow-xs z-10  md:px-14">
                             <h4 className="flex items-center justify-center gap-2 px-12 text-[#AD0002] font-mochiy text-xs">Brinquedos e Acessórios</h4>
                         </div>
                     </div>
@@ -183,7 +183,7 @@ export function PageBirds() {
                 </section>
                 <section className="  w-full">
                     <div className="mt-8  ">
-                        <div className="absolute left-0  bg-[url(../../src/assets/cardimage.png)] bg-cover bg-blend-overlay bg-[#FEC29D] w-auto px-8 py-2 rounded-r-full shadow-[#762D00] shadow-xs z-10  md:px-14">
+                        <div className="absolute left-0  bg-[url(../../src/assets/cardimage.png)] bg-cover bg-blend-overlay bg-[#FEC29D] w-auto  py-2 rounded-r-full shadow-[#762D00] shadow-xs z-10  md:px-14">
                             <h4 className="flex items-center justify-center gap-2 px-12 text-[#762D00] font-mochiy text-xs">Produtos de Higiene</h4>
                         </div>
                     </div>

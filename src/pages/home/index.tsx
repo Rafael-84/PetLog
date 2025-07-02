@@ -58,8 +58,8 @@ export function Home() {
             <Container >
                 <section >
 
-                    <div className="py-28">
-                        <div className="absolute right-0 top-44  bg-[url(../../src/assets/cardimage.png)] bg-cover bg-blend-overlay bg-[#f7e73d] w-auto px-8 py-3 rounded-l-full shadow-[#575007] shadow-xs z-10 md:px-14">
+                    <div className=" py-12 md:py-28">
+                        <div className="absolute right-0 top-20 md:top-44  bg-[url(../../src/assets/cardimage.png)] bg-cover bg-blend-overlay bg-[#f7e73d] w-auto px-8 py-3 rounded-l-full shadow-[#575007] shadow-xs z-10 md:px-14">
                             <h4 className=" text-center text-[#575007] font-mochiy text-xs ">Produtos Recomendados</h4>
                         </div>
                     </div>
@@ -96,8 +96,8 @@ export function Home() {
                                 ))}
                             </div>
                         </div>
-                        <button onClick={slidePrev}><div className="absolute top-[65%] left-[11%] p-1 bg-white rounded-full flex items-center justify-center border-baseMenuText border-2 cursor-pointer hover:bg-amber-200 z-50 hover:duration-300 md:top-[70%] md:left-[6%] lg:left-[3%] xl:left-[8%] xl:top-[75%] 2xl:top-[65%] 2xl:left-[11%]"><GrFormPrevious color="#6C0020" size={20} /></div></button>
-                        <button onClick={slideNext}><div className="absolute top-[65%] right-[11%] p-1 bg-white rounded-full flex items-center justify-center border-baseMenuText border-2 cursor-pointer hover:bg-amber-200 z-50 hover:duration-300 md:right-[5%] md:top-[70%] lg:right-[2%] xl:right-[7%] xl:top-[75%] 2xl:top-[65%] 2xl:right-[10%]"><GrFormNext color="#6C0020" size={20} /></div></button>
+                        <button onClick={slidePrev}><div className="absolute top-[50%] left-[11%] p-1 bg-white rounded-full flex items-center justify-center border-baseMenuText border-2 cursor-pointer hover:bg-amber-200 z-50 hover:duration-300 md:top-[70%] md:left-[6%]  lg:left-[4%] xl:left-[9%] xl:top-[75%] 2xl:top-[65%] 2xl:left-[12.5%]"><GrFormPrevious color="#6C0020" size={20} /></div></button>
+                        <button onClick={slideNext}><div className="absolute top-[50%] right-[11%] p-1 bg-white rounded-full flex items-center justify-center border-baseMenuText border-2 cursor-pointer hover:bg-amber-200 z-50 hover:duration-300 md:top-[70%] md:right-[5%] lg:right-[4%] xl:right-[9%] xl:top-[75%] 2xl:top-[65%] 2xl:right-[12.5%]"><GrFormNext color="#6C0020" size={20} /></div></button>
                     </div>
                 </section>
                 <section className=" w-full flex flex-col gap-16">
